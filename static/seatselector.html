@@ -85,6 +85,22 @@
             </div>
         </div>
     </div>
+    <div class="center">
+        <div id="Box25">
+            <div class="popup" onclick="myFunction25()">Seat 25</div>
+        </div>
+    </div>
+    <div class="rowcenterL">
+        <div id="Box26">
+            <div class="popup" onclick="myFunction26()">Seat 26</div>
+        </div>
+    </div>
+    <div class="rowcenterL">
+        <div id="Box28">
+            <div class="popup" onclick="myFunction28()">Seat 28</div>
+        </div>
+
+    </div>
 </div>
 
 <! Right Side Seating Arrangement>
@@ -162,34 +178,39 @@
             </div>
         </div>
     </div>
-</div>
 
-<div class="split bottom">
-    <div id="Box22">
-        <div class="popup" onclick="myFunction22()">Seat 22</div>
+    <div class="rowcenterR">
+        <div id="Box27">
+            <div class="popup" onclick="myFunction27()">Seat 27</div>
+        </div>
     </div>
-    <div id="Box22">
-        <div class="popup" onclick="myFunction22()">Seat 22</div>
+    <div class="rowcenterR">
+        <div id="Box29">
+            <div class="popup" onclick="myFunction29()">Seat 29</div>
+        </div>
     </div>
-    <div id="Box22">
-        <div class="popup" onclick="myFunction22()">Seat 22</div>
-    </div>
-    <div id="Box22">
-        <div class="popup" onclick="myFunction22()">Seat 22</div>
-    </div>
-    <div id="Box22">
-        <div class="popup" onclick="myFunction22()">Seat 22</div>
-    </div>
-    <div id="Box22">
-        <div class="popup" onclick="myFunction22()">Seat 22</div>
+    <div class="rowcenterR">
+        <div id="Box30">
+            <div class="popup" onclick="updateSeatbyNumber()">Seat 30</div>
+        </div>
     </div>
 </div>
 
 <header>
 
+<script>
+    async function myFunction1() {
+        const firstName =document.getElementById(prompt("Enter Name: "))
+        const userName = document.getElementById(prompt("Enter user name: "))
+
+        const fetchString = "/myFunction1?firstName="+firstName+"&userName="+userName
+        const response = await fetch(fetchString)
+        const responseText = await response.text 
+        document.getElementById("Box1").innerHTML = responseText
+    }
+</script>
 
 </footer>
 </div>
-<script src="java.js"> </script>
 </body>
 </html>

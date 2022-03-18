@@ -1,4 +1,6 @@
-const express = require('express')
+const express = require('express');
+const { request } = require('http');
+const { parse } = require('path');
 app = express()
 
 var url = require('url');
@@ -42,6 +44,32 @@ app.get('/add-two-integers', (request, response) => {
 	response.type('text/plain')
 	response.send(sum.toString())
 })
+
+
+app.get('/myFunction1', (request, response) =>{
+	console.log('Calling "/,myFunction1" on the Node.js server.')
+	var inputs = url.parse(request.url, true).query
+	let xName = parse(inputs.firstName)
+	let yName = parse(inputs.userName)
+	let seatInfo = xName + "/n" + yName
+	response.type('text/plain')
+	response.send(seatInfo.toString())
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Template for calculating BMI using height in feet/inches and weight in pounds.
 app.get('/calculate-bmi', (request, response) => {
