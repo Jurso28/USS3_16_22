@@ -200,13 +200,15 @@
 
 <script>
     async function myFunction1() {
-        const firstName =document.getElementById(prompt("Enter Name: "))
-        const userName = document.getElementById(prompt("Enter user name: "))
-
-        const fetchString = "/myFunction1?firstName="+firstName+"&userName="+userName
+        const firstName =prompt("enter name:").toString()
+        console.log(firstName)
+        const userName = prompt("Enter user name: ").toString()
+        console.log(userName)
+        const fetchString = ("/my-function-1?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
-        const responseText = await response.text 
+        const responseText = await response.text() 
         document.getElementById("Box1").innerHTML = responseText
+        console.log(responseText)
     }
 </script>
 

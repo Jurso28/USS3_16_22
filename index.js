@@ -46,14 +46,16 @@ app.get('/add-two-integers', (request, response) => {
 })
 
 
-app.get('/myFunction1', (request, response) =>{
+app.get('/my-function-1', (request, response) =>{
 	console.log('Calling "/,myFunction1" on the Node.js server.')
 	var inputs = url.parse(request.url, true).query
-	let xName = parse(inputs.firstName)
-	let yName = parse(inputs.userName)
-	let seatInfo = xName + "/n" + yName
+	let xName = (inputs.firstName)
+	let yName = (inputs.userName)
+	let seatInfo = (xName + "<br>" + yName)
 	response.type('text/plain')
-	response.send(seatInfo.toString())
+	console.log(xName)
+	response.send("Seat 1: <br>"+JSON.stringify(seatInfo));
+	
 })
 
 
