@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'ultimateseatselectorupdated'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_94CEA787C16D4A3B80BE01477CF50A4D }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_04C30F976DB644A49645A8266DD9EA29 }}
           package: .
