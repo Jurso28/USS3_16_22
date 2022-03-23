@@ -32,7 +32,7 @@ app.get('/my-function-1', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 1: <br>"+JSON.stringify(seatInfo));
@@ -44,7 +44,7 @@ app.get('/my-function-2', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 2: <br>"+JSON.stringify(seatInfo));
@@ -56,7 +56,7 @@ app.get('/my-function-3', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 3: <br>"+JSON.stringify(seatInfo));
@@ -67,7 +67,7 @@ app.get('/my-function-4', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 4: <br>"+JSON.stringify(seatInfo));
@@ -78,7 +78,7 @@ app.get('/my-function-5', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 5: <br>"+JSON.stringify(seatInfo));
@@ -90,7 +90,7 @@ app.get('/my-function-6', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 6: <br>"+JSON.stringify(seatInfo));
@@ -101,7 +101,7 @@ app.get('/my-function-7', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 7: <br>"+JSON.stringify(seatInfo));
@@ -112,7 +112,7 @@ app.get('/my-function-8', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 8: <br>"+JSON.stringify(seatInfo));
@@ -123,7 +123,7 @@ app.get('/my-function-9', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 9: <br>"+JSON.stringify(seatInfo));
@@ -134,7 +134,7 @@ app.get('/my-function-10', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 10: <br>"+JSON.stringify(seatInfo));
@@ -145,7 +145,7 @@ app.get('/my-function-11', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 11: <br>"+JSON.stringify(seatInfo));
@@ -156,7 +156,7 @@ app.get('/my-function-12', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 12: <br>"+JSON.stringify(seatInfo));
@@ -167,7 +167,7 @@ app.get('/my-function-13', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 13: <br>"+JSON.stringify(seatInfo));
@@ -178,7 +178,7 @@ app.get('/my-function-14', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 14: <br>"+JSON.stringify(seatInfo));
@@ -189,7 +189,7 @@ app.get('/my-function-15', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 15: <br>"+JSON.stringify(seatInfo));
@@ -200,7 +200,7 @@ app.get('/my-function-16', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 16: <br>"+JSON.stringify(seatInfo));
@@ -211,7 +211,7 @@ app.get('/my-function-17', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 17: <br>"+JSON.stringify(seatInfo));
@@ -222,7 +222,7 @@ app.get('/my-function-18', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 18: <br>"+JSON.stringify(seatInfo));
@@ -233,7 +233,7 @@ app.get('/my-function-19', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 19: <br>"+JSON.stringify(seatInfo));
@@ -244,7 +244,7 @@ app.get('/my-function-20', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 20: <br>"+JSON.stringify(seatInfo));
@@ -255,7 +255,7 @@ app.get('/my-function-21', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 21: <br>"+JSON.stringify(seatInfo));
@@ -266,7 +266,7 @@ app.get('/my-function-22', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 22: <br>"+JSON.stringify(seatInfo));
@@ -277,7 +277,7 @@ app.get('/my-function-23', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 23: <br>"+JSON.stringify(seatInfo));
@@ -288,7 +288,7 @@ app.get('/my-function-24', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 24: <br>"+JSON.stringify(seatInfo));
@@ -299,7 +299,7 @@ app.get('/my-function-25', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 25: <br>"+JSON.stringify(seatInfo));
@@ -310,7 +310,7 @@ app.get('/my-function-26', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 26: <br>"+JSON.stringify(seatInfo));
@@ -321,7 +321,7 @@ app.get('/my-function-27', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 27: <br>"+JSON.stringify(seatInfo));
@@ -332,7 +332,7 @@ app.get('/my-function-28', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 28: <br>"+JSON.stringify(seatInfo));
@@ -343,7 +343,7 @@ app.get('/my-function-29', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName +" "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 29: <br>"+JSON.stringify(seatInfo));
@@ -354,10 +354,19 @@ app.get('/my-function-30', (request, response) =>{
 	var inputs = url.parse(request.url, true).query
 	let xName = (inputs.firstName)
 	let yName = (inputs.userName)
-	let seatInfo = (xName + "<br>" + yName)
+	let seatInfo = (xName + " "+ yName)
 	response.type('text/plain')
 	console.log(xName)
 	response.send("Seat 30: <br>"+JSON.stringify(seatInfo));
+	
+})
+
+app.get('/Delete-Value', (request, response) =>{
+	console.log('Calling "/,myFunction30" on the Node.js server.')
+	var inputs = url.parse(request.url, true).query
+	let deleteSeat = (inputs.deleteSeat)
+	response.type('text/plain')
+	response.send(deleteSeat.toString());
 	
 })
 

@@ -195,340 +195,416 @@
         </div>
     </div>
 </div>
+<button type="button" onclick="Delete()">Delete Seat Information</button>
+<div id="Delete-Seat-Result"></div>
+<select onchange="Delete()" id="Delete-Value">
+    <option>Seat 1</option>
+    <option>Seat 2</option>
+    <option>Seat 3</option>
+    <option>Seat 4</option>
+    <option>Seat 5</option>
+    <option>Seat 6</option>
+    <option>Seat 7</option>
+    <option>Seat 8</option>
+    <option>Seat 9</option>
+    <option>Seat 10</option>
+    <option>Seat 11</option>
+    <option>Seat 12</option>
+    <option>Seat 13</option>
+    <option>Seat 14</option>
+    <option>Seat 15</option>
+    <option>Seat 16</option>
+    <option>Seat 17</option>
+    <option>Seat 18</option>
+    <option>Seat 19</option>
+    <option>Seat 20</option>
+    <option>Seat 21</option>
+    <option>Seat 22</option>
+    <option>Seat 23</option>
+    <option>Seat 24</option>
+    <option>Seat 25</option>
+    <option>Seat 26</option>
+    <option>Seat 27</option>
+    <option>Seat 28</option>
+    <option>Seat 29</option>
+    <option>Seat 30</option>
+</select>
 
 <header>
 
 <script>
+
+    async function Delete() {
+        const Delete = document.getElementById("Delete-Value").value
+        const fetchString = ("/Delete-Value?Delete="+Delete)
+        const response = await fetch(fetchString)
+        const responseText = await response.text() 
+        document.getElementById("Box1").innerHTML = responseText
+    }
+
+
+
+
     async function myFunction1() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-1?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box1").innerHTML = responseText
+        alert("Seat 1 is taken")
         console.log(responseText)
     }
 
     async function myFunction2() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-2?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box2").innerHTML = responseText
+        alert("Seat 2 is taken")
         console.log(responseText)
     }
 
     async function myFunction3() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-3?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box3").innerHTML = responseText
+        alert("Seat 3 is taken")
         console.log(responseText)
     }
     async function myFunction4() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-4?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box4").innerHTML = responseText
+        alert("Seat 4 is taken")
         console.log(responseText)
     }
     async function myFunction5() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-5?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box5").innerHTML = responseText
+        alert("Seat 5 is taken")
         console.log(responseText)
     }
     async function myFunction6() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-6?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box6").innerHTML = responseText
+        alert("Seat 6 is taken")
         console.log(responseText)
     }
     async function myFunction7() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-7?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box7").innerHTML = responseText
+        alert("Seat 7 is taken")
         console.log(responseText)
     }
     async function myFunction8() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-8?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box8").innerHTML = responseText
+        alert("Seat 8 is taken")
         console.log(responseText)
     }
     async function myFunction9() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-9?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box9").innerHTML = responseText
+        alert("Seat 9 is taken")
         console.log(responseText)
     }
     async function myFunction10() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-10?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box10").innerHTML = responseText
+        alert("Seat 10 is taken")
         console.log(responseText)
     }
     async function myFunction11() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-11?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box11").innerHTML = responseText
+        alert("Seat 11 is taken")
         console.log(responseText)
     }
     async function myFunction12() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-12?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box12").innerHTML = responseText
+        alert("Seat 12 is taken")
         console.log(responseText)
     }
     async function myFunction13() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-13?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box13").innerHTML = responseText
+        alert("Seat 13 is taken")
         console.log(responseText)
     }
     async function myFunction14() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-14?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box14").innerHTML = responseText
+        alert("Seat 14 is taken")
         console.log(responseText)
     }
     async function myFunction15() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-15?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box15").innerHTML = responseText
+        alert("Seat 15 is taken")
         console.log(responseText)
     }
     async function myFunction16() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-16?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box16").innerHTML = responseText
+        alert("Seat 16 is taken")
         console.log(responseText)
     }
     async function myFunction17() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-17?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box17").innerHTML = responseText
+        alert("Seat 17 is taken")
         console.log(responseText)
     }
     async function myFunction18() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-18?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box18").innerHTML = responseText
+        alert("Seat 18 is taken")
         console.log(responseText)
     }
     async function myFunction19() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-19?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box19").innerHTML = responseText
+        alert("Seat 19 is taken")
         console.log(responseText)
     }
     async function myFunction20() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-20?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box20").innerHTML = responseText
+        alert("Seat 20 is taken")
         console.log(responseText)
     }
     async function myFunction21() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-21?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box21").innerHTML = responseText
+        alert("Seat 21 is taken")
         console.log(responseText)
     }
     async function myFunction22() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-22?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box22").innerHTML = responseText
+        alert("Seat 22 is taken")
         console.log(responseText)
     }
     async function myFunction23() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-23?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box23").innerHTML = responseText
+        alert("Seat 23 is taken")
         console.log(responseText)
     }
     async function myFunction24() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-24?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box24").innerHTML = responseText
+        alert("Seat 24 is taken")
         console.log(responseText)
     }
     async function myFunction25() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-25?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box25").innerHTML = responseText
+        alert("Seat 25 is taken")
         console.log(responseText)
     }
     async function myFunction26() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-26?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box26").innerHTML = responseText
+        alert("Seat 26 is taken")
         console.log(responseText)
     }
     async function myFunction27() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-27?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box27").innerHTML = responseText
+        alert("Seat 27 is taken")
         console.log(responseText)
     }
     async function myFunction28() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-28?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box28").innerHTML = responseText
+        alert("Seat 28 is taken")
         console.log(responseText)
     }
     async function myFunction29() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-29?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box29").innerHTML = responseText
+        alert("Seat 29 is taken")
         console.log(responseText)
     }
     async function myFunction30() {
-        const firstName =prompt("enter name:").toString()
+        const firstName =prompt("enter preferred first name:").toString()
         console.log(firstName)
-        const userName = prompt("Enter user name: ").toString()
+        const userName = prompt("Enter last name: ").toString()
         console.log(userName)
         const fetchString = ("/my-function-30?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box30").innerHTML = responseText
+        alert("Seat 30 is taken")
         console.log(responseText)
     }
 
