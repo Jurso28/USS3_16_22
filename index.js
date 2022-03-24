@@ -361,15 +361,18 @@ app.get('/my-function-30', (request, response) =>{
 	
 })
 
-app.get('/Delete-Value', (request, response) =>{
+
+app.get('/fetch-virtual-result', (request, response) =>{
 	console.log('Calling "/,myFunction30" on the Node.js server.')
 	var inputs = url.parse(request.url, true).query
-	let deleteSeat = (inputs.deleteSeat)
+	let xName = (inputs.firstName)
+	let yName = (inputs.userName)
+	let seatInfo = (xName + " "+ yName)
 	response.type('text/plain')
-	response.send(deleteSeat.toString());
+	console.log(xName)
+	response.send("Virtual User: <br>"+JSON.stringify(seatInfo));
 	
 })
-
 
 
 // Test a variety of functions.

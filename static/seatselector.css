@@ -74,6 +74,16 @@
   display: table;
 }
 
+
+#button{
+  width: 5%;
+  padding: 1px;
+  margin-top: 35%;
+  margin-left: 0%;
+}
+
+
+
 #Box1 {
     width: 100px;
     padding: 10px;

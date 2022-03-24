@@ -194,53 +194,37 @@
             <div class="popup" onclick="myFunction30()">Seat 30</div>
         </div>
     </div>
+    <button type="button" onclick="fetchVirtual()">Virtual</button>
+    <div id="fetch-virtual-result"></div>
+    <br><br>
 </div>
-<button type="button" onclick="Delete()">Delete Seat Information</button>
-<div id="Delete-Seat-Result"></div>
-<select onchange="Delete()" id="Delete-Value">
-    <option>Seat 1</option>
-    <option>Seat 2</option>
-    <option>Seat 3</option>
-    <option>Seat 4</option>
-    <option>Seat 5</option>
-    <option>Seat 6</option>
-    <option>Seat 7</option>
-    <option>Seat 8</option>
-    <option>Seat 9</option>
-    <option>Seat 10</option>
-    <option>Seat 11</option>
-    <option>Seat 12</option>
-    <option>Seat 13</option>
-    <option>Seat 14</option>
-    <option>Seat 15</option>
-    <option>Seat 16</option>
-    <option>Seat 17</option>
-    <option>Seat 18</option>
-    <option>Seat 19</option>
-    <option>Seat 20</option>
-    <option>Seat 21</option>
-    <option>Seat 22</option>
-    <option>Seat 23</option>
-    <option>Seat 24</option>
-    <option>Seat 25</option>
-    <option>Seat 26</option>
-    <option>Seat 27</option>
-    <option>Seat 28</option>
-    <option>Seat 29</option>
-    <option>Seat 30</option>
-</select>
 
-<header>
+
 
 <script>
+    async function fetchVirtual(){
+        const firstName =prompt("enter preferred first name:").toString()
+        console.log(firstName)
+        const userName = prompt("Enter last name: ").toString()
+        console.log(userName)
+        const fetchString = ("/fetch-virtual-result?firstName="+firstName+"&userName="+userName)
+        const response = await fetch(fetchString)
+        const responseText = await response.text() 
+        document.getElementById("fetch-virtual-result").innerHTML = responseText
+        alert("Virtual Seat added")
+        console.log(responseText)
+    }
 
+    function hello(){
+        alert("hello")
+    }
     async function Delete() {
         const Delete = document.getElementById("Delete-Value").value
         const fetchString = ("/Delete-Value?Delete="+Delete)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box1").innerHTML = responseText
-        
+
     }
 
 
