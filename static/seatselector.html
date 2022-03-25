@@ -194,7 +194,7 @@
             <div class="popup" onclick="myFunction30()">Seat 30</div>
         </div>
     </div>
-    <button type="button" onclick="fetchVirtual()">Virtual</button>
+    <button type="button" onclick="fetchVirtual()">Virtual Users:</button>
     <div id="fetch-virtual-result"></div>
     <br><br>
 </div>
@@ -210,23 +210,12 @@
         const fetchString = ("/fetch-virtual-result?firstName="+firstName+"&userName="+userName)
         const response = await fetch(fetchString)
         const responseText = await response.text() 
-        document.getElementById("fetch-virtual-result").innerHTML = responseText
+        document.getElementById("fetch-virtual-result").innerHTML += responseText
         alert("Virtual Seat added")
         console.log(responseText)
     }
 
-    function hello(){
-        alert("hello")
-    }
-    async function Delete() {
-        const Delete = document.getElementById("Delete-Value").value
-        const fetchString = ("/Delete-Value?Delete="+Delete)
-        const response = await fetch(fetchString)
-        const responseText = await response.text() 
-        document.getElementById("Box1").innerHTML = responseText
-
-    }
-
+  
 
 
 
@@ -239,7 +228,7 @@
         const response = await fetch(fetchString)
         const responseText = await response.text() 
         document.getElementById("Box1").innerHTML = responseText
-        alert("Seat 1 is taken")
+        alert("Seat 1 is taken")        
         console.log(responseText)
     }
 
@@ -591,6 +580,7 @@
         document.getElementById("Box30").innerHTML = responseText
         alert("Seat 30 is taken")
         console.log(responseText)
+        
     }
 
 
