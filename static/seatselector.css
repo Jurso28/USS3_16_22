@@ -91,6 +91,7 @@
     margin: 0;
     outline-color: black;
   }
+
 #Box2 {
     width: 100px;
     padding: 10px;
@@ -301,7 +302,7 @@
     display: inline-block;
     cursor: pointer;
   }
-  
+
   /* The actual popup (appears on top) */
   .popup .popuptext {
     visibility: hidden;
