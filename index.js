@@ -370,7 +370,7 @@ app.get('/fetch-virtual-result', (request, response) =>{
 	let seatInfo = (xName + " "+ yName)
 	response.type('text/plain')
 	console.log(xName)
-	response.send("Virtual User: <br>"+JSON.stringify(seatInfo));
+	response.send("<br>"+JSON.stringify(seatInfo));
 	
 })
 
