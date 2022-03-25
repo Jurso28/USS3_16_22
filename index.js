@@ -26,6 +26,17 @@ app.get('/version', (request, response) => {
 	response.type('text/plain')
 	response.send('Version: '+majorVersion+'.'+minorVersion)
 })
+app.get('/my-function-0', (request, response) =>{
+	console.log('Calling "/,myFunction0" on the Node.js server.')
+	var inputs = url.parse(request.url, true).query
+	let xName = (inputs.firstName)
+	let yName = (inputs.userName)
+	let seatInfo = (xName +" "+ yName)
+	response.type('text/plain')
+	console.log(xName)
+	response.send("Teacher's Seat: <br>"+JSON.stringify(seatInfo));
+	
+})
 
 app.get('/my-function-1', (request, response) =>{
 	console.log('Calling "/,myFunction1" on the Node.js server.')

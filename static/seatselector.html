@@ -15,6 +15,14 @@
 <div class="split left">
     <div class="row">
         <div class="topcolumnL">
+            <div id="Box0">
+                <div class="popup" onclick="myFunction0()">Teachers Seat</div>
+            </div>
+        </div>
+    </div>
+    <div class="Space"></div>
+    <div class="row">
+        <div class="topcolumnL">
             <div id="Box1">
                 <div class="popup" onclick="myFunction1()">Seat 1</div>
             </div>
@@ -104,7 +112,17 @@
 </div>
 
 <! Right Side Seating Arrangement>
+>
+
 <div class="split right">
+   
+    <div class="row">
+        <div class="topcolumnL">
+            
+            
+        </div>
+    </div>
+    <div class="Space"></div>
     <div class="row">
         <div class="topcolumnR">
             <div id="Box7">
@@ -217,7 +235,18 @@
 
   
 
-
+    async function myFunction0() {
+        const firstName =prompt("enter preferred first name:").toString()
+        console.log(firstName)
+        const userName = prompt("Enter last name: ").toString()
+        console.log(userName)
+        const fetchString = ("/my-function-0?firstName="+firstName+"&userName="+userName)
+        const response = await fetch(fetchString)
+        const responseText = await response.text() 
+        document.getElementById("Box0").innerHTML = responseText
+        alert("Teacher's Seat is taken")        
+        console.log(responseText)
+    }
 
     async function myFunction1() {
         const firstName =prompt("enter preferred first name:").toString()
