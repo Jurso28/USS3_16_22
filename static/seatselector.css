@@ -1,3 +1,8 @@
+body{
+  background-image: url("Empty_Class.jpg");
+  background-size: auto;
+}
+
 .Space{
   padding-top: 10%;
 }
@@ -81,6 +86,19 @@
   margin-top: 35%;
   margin-left: 0%;
 }
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 140%;
+  transform: translate(-50%, -50%);
+}
+
+
 
 #Box0 {
   width: 100px;
@@ -88,7 +106,9 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
+
 
 #Box1 {
     width: 100px;
@@ -96,6 +116,7 @@
     border: 5px solid gray;
     margin: 0;
     outline-color: black;
+    object-fit: contain;
   }
 
 #Box2 {
@@ -104,6 +125,7 @@
     border: 5px solid gray;
     margin: 0;
     outline-color: black;
+    object-fit: contain;
 }
 #Box3 {
     width: 100px;
@@ -111,6 +133,7 @@
     border: 5px solid gray;
     margin: 0;
     outline-color: black;
+    object-fit: contain;
 }
 #Box4 {
   width: 100px;
@@ -118,6 +141,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box5 {
   width: 100px;
@@ -125,6 +149,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box6 {
   width: 100px;
@@ -132,6 +157,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box7 {
   width: 100px;
@@ -139,6 +165,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box8 {
   width: 100px;
@@ -146,6 +173,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box9 {
   width: 100px;
@@ -153,6 +181,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box10 {
   width: 100px;
@@ -160,6 +189,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box11 {
   width: 100px;
@@ -167,6 +197,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box12 {
   width: 100px;
@@ -174,6 +205,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box13 {
   width: 100px;
@@ -181,6 +213,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box14 {
   width: 100px;
@@ -188,6 +221,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box15 {
   width: 100px;
@@ -195,6 +229,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box16 {
   width: 100px;
@@ -202,6 +237,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box17 {
   width: 100px;
@@ -209,6 +245,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box18 {
   width: 100px;
@@ -216,6 +253,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box19 {
   width: 100px;
@@ -223,6 +261,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box20 {
   width: 100px;
@@ -230,6 +269,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box21 {
   width: 100px;
@@ -237,6 +277,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box22 {
   width: 100px;
@@ -244,6 +285,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box23 {
   width: 100px;
@@ -251,6 +293,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box24 {
   width: 100px;
@@ -258,6 +301,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box25 {
   width: 100px;
@@ -265,6 +309,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box26 {
   width: 100px;
@@ -272,6 +317,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box27 {
   width: 100px;
@@ -279,6 +325,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box28 {
   width: 100px;
@@ -286,6 +333,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box29 {
   width: 100px;
@@ -293,6 +341,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
 #Box30 {
   width: 100px;
@@ -300,6 +349,7 @@
   border: 5px solid gray;
   margin: 0;
   outline-color: black;
+  object-fit: contain;
 }
   
 /* Popup container */
