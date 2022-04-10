@@ -4,6 +4,7 @@ body { background-color: #303030;
 	background-position-x: center;
 	background-repeat: no-repeat;
 	background-image: url(classroom.jpg);
+    
 
 }
 
@@ -12,8 +13,9 @@ body { background-color: #303030;
   margin-right: auto;
   margin-left: auto;
   min-width: 90px;
-  max-width: 500px;
-  margin-top:50px;
+  max-width: 800px;
+  margin-top:20px;
+  text-align: center;
 
 }
 
@@ -51,3 +53,27 @@ main { 	padding-left: 2em;
 
 footer { text-align: center;
 }
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
